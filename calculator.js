@@ -4,6 +4,8 @@
 window.onload = function () {
     document.querySelector(".currency-value-input").value = null;
     document.querySelector(".currency-value-output").value = null;
+    calculateExchangeValue(event);
+
 };
 
 

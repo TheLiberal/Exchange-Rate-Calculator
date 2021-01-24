@@ -87,6 +87,7 @@ input {
 }
 
 select {
+  background-color: white;
   margin: 0.5rem;
   padding: 0.9rem;
   font-size: 1.1rem;
@@ -103,6 +104,10 @@ select {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: select;
+}
+
+select option {
+  background-color: white;
 }
 
 .select {
