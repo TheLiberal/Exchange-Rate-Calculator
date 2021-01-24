@@ -1,0 +1,211 @@
+.calculator-cta {
+  height: 80px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.container-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calculator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1000px;
+  width: 800px;
+  max-height: 300px;
+  height: 300px;
+  padding: 1rem 2rem 2rem 2rem;
+  text-align: center;
+  background-color: #121821;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 4px 4px 4px #12182134;
+          box-shadow: 4px 4px 4px #12182134;
+}
+
+.calculator-header {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+input {
+  padding: 0.85rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+select {
+  margin: 0.5rem;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: inherit;
+  line-height: inherit;
+  text-transform: uppercase;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: select;
+}
+
+.select {
+  width: 95px;
+  padding: 0.25em 0.5em;
+  cursor: pointer;
+  line-height: 1.1;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "select";
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.select::after {
+  content: "";
+  width: 0.8rem;
+  height: 0.5rem;
+  background-color: black;
+  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: select;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.input,
+.output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+.arrows {
+  margin: 1rem 0rem 1rem 1rem;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+  margin: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .calculator {
+    min-height: 600px;
+  }
+  .calculator-header {
+    font-size: 2.25rem !important;
+  }
+  .container-inside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .input,
+  .output {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .select {
+    margin-right: 0.8rem;
+  }
+  .arrows {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+/*# sourceMappingURL=calculator-style.css.map */

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        description="Exchange Rate Calculator lets you calculate the price in any other currency or view a list of all currencies with their rates">
+    <link rel="shortcut icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="currency-flags.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"
+        rel="preload" as="style">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calculator-style.css">
+    <title>Exchange Rate Calculator</title>
+</head>
+
+<body>
+    <div class="top-bar"></div>
+    <nav class="header">
+        <h1>Exchange Rate Calculator</h1>
+        <a href="index.html"><button class="cta calculator-cta">See available currencies</button></a>
+    </nav>
+
+    <div class="container">
+        <section class="calculator">
+            <h2 class="calculator-header">Choose currencies</h2>
+            <div class="container-inside">
+                <div class="input">
+                    <div class="select">
+                        <select class="currency-options-input" disabled>
+                            <option value="USD" selected>USD</option>
+                        </select>
+                    </div>
+                    <input class="currency-value-input" placeholder="0">
+                </div>
+                <svg class="arrows" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 459.81" stroke="white"
+                    fill="white" width="100px" height="auto">
+                    <path
+                        d="M315.43,216.61V110.91A16.24,16.24,0,0,0,299.2,94.67H157.13V42.34c0-14.32-17.29-21.63-27.56-11.62L4.9,152.13a16.24,16.24,0,0,0,0,23.25L129.57,296.8c10.26,10,27.56,2.7,27.56-11.63V232.84H299.2a16.23,16.23,0,0,0,16.23-16.23ZM283,200.38H140.9a16.22,16.22,0,0,0-16.23,16.23v30.1l-85.18-83,85.18-82.95v30.1a16.23,16.23,0,0,0,16.23,16.23H283Z"
+                        transform="translate(0 -26.09)" />
+                    <path
+                        d="M507.1,336.63,382.43,215.22c-10.26-10-27.56-2.71-27.56,11.63v52.33H212.8a16.23,16.23,0,0,0-16.23,16.23v105.7a16.23,16.23,0,0,0,16.23,16.23H354.87v52.33c0,14.37,17.35,21.57,27.56,11.63L507.1,359.89a16.25,16.25,0,0,0,0-23.26ZM387.34,431.21v-30.1a16.24,16.24,0,0,0-16.24-16.23H229V311.64H371.1a16.24,16.24,0,0,0,16.24-16.23v-30.1l85.17,82.95Z"
+                        transform="translate(0 -26.09)" /></svg>
+                <div class="output">
+                    <div class="select">
+                        <select class="currency-options-output" disabled>
+                            <option value="USD" selected>USD</option>
+                        </select>
+                    </div>
+                    <input type="number" class="currency-value-output" readonly>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="http.js"></script>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
